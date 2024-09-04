@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="modal" class="modal" onclick="closeModal()">
+      <button class="close-button" id="closeButton">×</button>
+      <img class="img-modal-content" id="modalImage" />
+    </div>
+    <div id="formModal" class="modal">
+      <button class="close-button" id="closeButton" onclick="closeFormModal()">
+        ×
+      </button>
+      <div class="modal-content">
+        <p class="modal-content__text">Где я могу с вами связаться?</p>
+        <section class="container" id="container_1">
+          <div class="form-container sign-up">
+            <form>
+              <h2 class="form__h2">Позвонить вам в телеграм?</h2>
+              <input type="text" placeholder="Ваше имя" />
+              <input type="text" placeholder="Ваш номер" />
+              <button>Отправить</button>
+            </form>
+          </div>
+          <div class="form-container sign-in">
+            <form>
+              <h2 class="form__h2_start">Позвонить вам в whatsapp?</h2>
+              <input type="text" placeholder="Ваше имя" />
+              <input type="text" placeholder="Ваш номер" />
+              <button>Отправить</button>
+            </form>
+          </div>
+          <div class="toggle-container">
+            <div class="toggle">
+              <div class="toggle-panel toggle-left">
+                <button class="hidden" id="login_1">whatsapp</button>
+              </div>
+              <div class="toggle-panel toggle-right">
+                <button class="hidden" id="register_1">телеграм</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="background-spot"></div>
+    <header class="preview">
+      <h1 class="preview__h1">УВЕЛИЧУ ПРИБЫЛЬ ЗА 1 МЕСЯЦ РАБОТЫ</h1>
+      <div class="preview__box">
+        <div class="preview__payback">
+          окупаемость от<span class="preview__payback-span">&nbsp;200%</span>
+        </div>
+        <p class="preview__social">
+          реклама для Instagram, Facebook и Вконтакте
+        </p>
+      </div>
+      <div class="preview__container">
+        <div class="preview-text">
+          <p class="preview-text__first">4 года опыта в маркетинге</p>
+          <p class="preview-text__second">49+ успешных проектов</p>
+        </div>
+        <div class="photo-container">
+          <img class="photo-container__img" src="./images/ira-.png" alt="Ira" />
+        </div>
+      </div>
+    </header>
+    <button class="free-consultation__button button-left buttom-bottom" onclick="openForm()">
+      ОСТАВИТЬ ЗАЯВКУ
+    </button>
+    <h2 class="swiches__h2">Мои результаты</h2>
+    <section>
+      <ul class="swiches">
+        <li class="swiches__left">
+          <button
+            class="swiches__button-1"
+            onclick="toggleVisibility('logo-container')"
+          >
+            Увеличение прибыли
+          </button>
+        </li>
+        <li class="swiches__right">
+          <button
+            class="swiches__button-2"
+            onclick="toggleVisibility('subscribers')"
+          >
+            Рост подписчиков
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="logo-container show">
+      <div class="logo-box">
+        <button class="circle-button" data-overlay="overlay1">
+          <img src="images/dodo.png" alt="Фото 1" />
+        </button>
+        <div class="overlay" id="overlay1">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img"
+                  src="./images/tb_dodo.png"
+                  alt="Table"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img"
+                  src="./images/inst_dodo.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">DODO PIZZA</h4>
+              <p class="overlay__text">
+                Потратили:
+                <span class="overlay__text-span">$28 340</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов:
+                <span class="overlay__text-span">2 834</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида:
+                <span class="overlay__text-span">$10</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI:
+                <span class="overlay__text-span">209%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="circle-button" data-overlay="overlay2">
+          <img src="images/ogodeveri.png" alt="Фото 2" />
+        </button>
+        <div class="overlay" id="overlay2">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img-2"
+                  src="./images/tb_dvery.png"
+                  alt="Table"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-2"
+                  src="./images/inst_ogodvery.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-2"
+                  src="./images/inst_100dverey.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">OGODVERI и 100dverey</h4>
+              <p class="overlay__text">
+                Потратили:
+                <span class="overlay__text-span">$1 530</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов: <span class="overlay__text-span">512</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида: <span class="overlay__text-span">$1,97</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI: <span class="overlay__text-span">449%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="circle-button circle-button_none"
+          data-overlay="overlay3"
+        >
+          <img src="images/ok.png" alt="Фото 3" />
+        </button>
+        <div class="overlay" id="overlay3">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img-3"
+                  src="./images/tb_ok.png"
+                  alt="Table"
+                  style="background-color: #000"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-3"
+                  src="./images/inst_ok.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">OK.AGENCY</h4>
+              <p class="overlay__text">
+                Потратили:
+                <span class="overlay__decoration">$1 754</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов: <span class="overlay__text-span">112</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида: <span class="overlay__text-span">$1,97</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI: <span class="overlay__text-span">1 915%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="circle-button circle-button_none"
+          data-overlay="overlay4"
+        >
+          <img src="images/nada.jpg" alt="Фото 4" />
+        </button>
+        <div class="overlay" id="overlay4">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img-4"
+                  src="./images/tb_nada.png"
+                  alt="Table"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-4"
+                  src="./images/inst_nada.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">Магазин женской одежды</h4>
+              <p class="overlay__text">
+                Потратили: <span class="overlay__text-span">$11 655</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов: <span class="overlay__text-span">5 832</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида: <span class="overlay__text-span">$0,80</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI: <span class="overlay__text-span">4 500%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-box-3">
+        <button class="circle-button" data-overlay="overlay5">
+          <img src="images/necratine.jpeg" alt="Фото 1" />
+        </button>
+        <div class="overlay" id="overlay5">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img-5"
+                  src="./images/tb_nectarine.png"
+                  alt="Table"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-5"
+                  src="./images/inst_nectarine.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">Nectarine</h4>
+              <p class="overlay__text">
+                Потратили: <span class="overlay__text-span">$16 500</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов: <span class="overlay__text-span">1178</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида: <span class="overlay__text-span">$2,72</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI: <span class="overlay__text-span">189%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="circle-button" data-overlay="overlay6">
+          <img src="images/nt.jpeg" alt="Фото 2" />
+        </button>
+        <div class="overlay" id="overlay6">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img-6"
+                  src="./images/tb_travel.png"
+                  alt="Table"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-6"
+                  src="./images/inst_travel.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">Турфирма</h4>
+              <p class="overlay__text">
+                Потратили: <span class="overlay__text-span">$5 612</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов: <span class="overlay__text-span">51</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида: <span class="overlay__text-span">$20</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI: <span class="overlay__text-span">2700%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="circle-button" data-overlay="overlay7">
+          <img src="images/vl.jpeg" alt="Фото 3" />
+        </button>
+        <div class="overlay" id="overlay7">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img-7"
+                  src="./images/tb_visalab.png"
+                  alt="Table"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-7"
+                  src="./images/inst_visalab.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">Визовое агентство</h4>
+              <p class="overlay__text">
+                Потратили: <span class="overlay__text-span">$950</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов: <span class="overlay__text-span">187</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида: <span class="overlay__text-span">$0,80</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI: <span class="overlay__text-span">236%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-box-2">
+        <button class="circle-button" data-overlay="overlay3">
+          <img src="images/ok.png" alt="Фото 3" />
+        </button>
+        <div class="overlay" id="overlay3">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img-3"
+                  src="./images/tb_ok.png"
+                  alt="Table"
+                  style="background-color: #000"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-3"
+                  src="./images/inst_ok.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">OK.AGENCY</h4>
+              <p class="overlay__text">
+                Потратили:
+                <span class="overlay__decoration">$1 754</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов: <span class="overlay__text-span">112</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида: <span class="overlay__text-span">$1,97</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI: <span class="overlay__text-span">1 915%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="circle-button" data-overlay="overlay4">
+          <img src="images/nada.jpg" alt="Фото 4" />
+        </button>
+        <div class="overlay" id="overlay4">
+          <div class="overlay-content">
+            <button class="close-button" id="closeButton">&times;</button>
+            <div class="overlay__block">
+              <div class="overlay__photo-gallery" id="photoGallery">
+                <img
+                  class="overlay__img-4"
+                  src="./images/tb_nada.png"
+                  alt="Table"
+                  onclick="openModal(this)"
+                />
+                <img
+                  class="overlay__img-4"
+                  src="./images/inst_nada.png"
+                  alt="Inst"
+                  onclick="openModal(this)"
+                />
+                <button class="photo-display-left" onclick="plusDivs(-1)">
+                  &#10094;
+                </button>
+                <button class="photo-display-right" onclick="plusDivs(+1)">
+                  &#10095;
+                </button>
+              </div>
+              <h4 class="overlay__title">Магазин женской одежды</h4>
+              <p class="overlay__text">
+                Потратили: <span class="overlay__text-span">$11 655</span>
+              </p>
+              <p class="overlay__text">
+                Новых клиентов: <span class="overlay__text-span">5 832</span>
+              </p>
+              <p class="overlay__text">
+                Цена лида: <span class="overlay__text-span">$0,80</span>
+              </p>
+              <hr />
+              <p class="overlay__text">
+                ROI: <span class="overlay__text-span">4 500%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="logo-container__text">
+        (хочешь узнать подробнее, нажми на кейс)
+      </p>
+    </section>
+    <section class="subscribers hide">
+      <div class="subscribers__inner">
+        <div class="subscribers__box">
+          <div class="before-block">До</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/minimalist_lot.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/minimalist_lot.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">90</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">31.9k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">978</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="after-block">После</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/minimalist_lot.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/minimalist_lot.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">116</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">43.3k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">1,031</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribers__box">
+          <div class="before-block">До</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/mf.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/mf.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">405</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">70k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">1,179</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="after-block">После</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/mf.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/mf.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">457</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">86.5k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">1,214</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribers__box">
+          <div class="before-block">До</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/shanika.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/shanika.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">120</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">30.6k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">203</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="after-block">После</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/shanika.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/shanika.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">138</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">49k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">269</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribers__box">
+          <div class="before-block">До</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/minimalist_lot.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/minimalist_lot.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">90</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">31.9k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">978</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="after-block">После</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/minimalist_lot.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/minimalist_lot.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">116</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">43.3k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">1,031</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribers__box">
+          <div class="before-block">До</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/mf.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/mf.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">405</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">70k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">1,179</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="after-block">После</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/mf.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/mf.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">457</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">86.5k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">1,214</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribers__box">
+          <div class="before-block">До</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/shanika.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/shanika.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">120</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">30.6k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">203</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="after-block">После</div>
+          <div class="client-slider-blocks">
+            <div class="client-slider-main">
+              <div class="client-slider-user">
+                <img
+                  alt="a pair of brown sandals"
+                  nitro-lazy-src="./images/shanika.webp"
+                  class="client-slider-img"
+                  decoding="async"
+                  nitro-lazy-empty=""
+                  id="MTY2ODoxNjQ=-1"
+                  src="./images/shanika.webp"
+                />
+              </div>
+              <div class="client-slider-info">
+                <div class="client-slider-top-sec">
+                  <label>minimalist.lot</label>
+                  <div class="client-person-btns">
+                    <span class="client-person-title">Follow</span>
+                    <span class="client-person-arrow"
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6.859"
+                        height="12"
+                        viewBox="0 0 386.257 386.257"
+                        xml:space="preserve"
+                      >
+                        <polygon
+                          points="0,96.879 193.129,289.379 386.257,96.879"
+                          fill="white"
+                        ></polygon>
+                      </svg>
+                    </span>
+                    <span>...</span>
+                  </div>
+                </div>
+                <div class="client-slider-bottom-sec">
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">138</p>
+                    <p class="client-slider-bottom-sec__title">posts</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">49k</p>
+                    <p class="client-slider-bottom-sec__title">followers</p>
+                  </div>
+                  <div class="client-slider-bottom-sec__box">
+                    <p class="client-slider-bottom-sec__number">269</p>
+                    <p class="client-slider-bottom-sec__title">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h2 class="video-reviews__h2">ЖИВЫЕ ОТЗЫВЫ КЛИЕНТОВ</h2>
+    <section class="video-reviews">
+      <article class="video-box">
+        <video class="video-box__video" controls>
+          <source src="./videos/video.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+        <p class="video-box__title">OK.AGENCY</p>
+        <p class="video-box__name">Константин Огородников</p>
+        <table class="video-box__table">
+          <tr class="video-box__row">
+            <td>Потратили</td>
+            <td>Заявок</td>
+            <td>Клиентов</td>
+          </tr>
+          <tr class="video-box__row_blue">
+            <td>$1754</td>
+            <td>314</td>
+            <td>112</td>
+          </tr>
+        </table>
+      </article>
+      <article class="video-box">
+        <video class="video-box__video" controls>
+          <source src="./videos/video-1.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+        <p class="video-box__title">TRAVEL</p>
+        <p class="video-box__name">Евгений Владимирович</p>
+        <table class="video-box__table">
+          <tr class="video-box__row">
+            <td>Потратили</td>
+            <td>Заявок</td>
+            <td>Клиентов</td>
+          </tr>
+          <tr class="video-box__row_blue">
+            <td>$5612</td>
+            <td>138</td>
+            <td>51</td>
+          </tr>
+        </table>
+      </article>
+      <article class="video-box">
+        <video class="video-box__video" controls>
+          <source src="./videos/video-2.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+        <p class="video-box__title">LCD1</p>
+        <p class="video-box__name">Яна Александровна</p>
+        <table class="video-box__table">
+          <tr class="video-box__row">
+            <td>Потратили</td>
+            <td>Заявок</td>
+            <td>Клиентов</td>
+          </tr>
+          <tr class="video-box__row_blue">
+            <td>$11655</td>
+            <td>7356</td>
+            <td>5832</td>
+          </tr>
+        </table>
+      </article>
+      <article class="video-box video-box__right">
+        <video class="video-box__video" controls>
+          <source src="./videos/video-3.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+        <p class="video-box__title">LADY STORE</p>
+        <p class="video-box__name">Алекс Добромудров</p>
+        <table class="video-box__table">
+          <tr class="video-box__row">
+            <td>Потратили</td>
+            <td>Заявок</td>
+            <td>Клиентов</td>
+          </tr>
+          <tr class="video-box__row_blue">
+            <td>$16500</td>
+            <td>2937</td>
+            <td>1178</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <h2 class="reviews-text__h2">ОТЗЫВЫ</h2>
+    <section class="reviews-text">
+      <article class="reviews-text-box">
+        <div class="reviews-top">
+          <div class="reviews-top__img"></div>
+          <div class="reviews-top__box">
+            <p class="reviews-top__name">Светлана</p>
+            <img
+              src="./images/rating.svg"
+              class="reviews-rating"
+              alt="Rating"
+            />
+          </div>
+        </div>
+        <p class="reviews-text-box__title">
+          «Старательный и крутой специалист»
+        </p>
+        <p class="reviews-text-box__review">
+          Ирина, спасибо большое. Я вижу что Вы стараетесь! Нам это очень
+          нравится. Вы стараетесь с самого начала это видно а. я хочу Вам
+          доплатить за съемку пришлите пожалуйста номер карты. Вы милая,
+          приятная девушка и хороший продажник с хорошо поставленым голосом
+          :&#41; только чуть чуть торопитесь в запуске макетов. Я Вам сегодня
+          вечером пропишу регламент и выстроим нашу точную рекламную стратегию.
+        </p>
+        <p class="reviews-text-box__date">28 января</p>
+      </article>
+      <article class="reviews-text-box">
+        <div class="reviews-top">
+          <div class="reviews-top__img-2"></div>
+          <div class="reviews-top__box">
+            <p class="reviews-top__name">Артем</p>
+            <img
+              src="./images/rating.svg"
+              class="reviews-rating"
+              alt="Rating"
+            />
+          </div>
+        </div>
+        <p class="reviews-text-box__title">«Профессионал своего дела»</p>
+        <p class="reviews-text-box__review">
+          Раньше думал,что можно заниматься продвижением аккаунта без
+          таргетолога, но сейчас вижу разницу. Ирина всё покажет и расскажет,
+          сделает крутые макеты и настроит рекламу как надо. Поддержка 24/7,
+          советы по закрытию клиентов, помощь в оформлении. Жалею, что раньше
+          пренебрегал таргетологами, сейчас я доволен результатами. После Ирины
+          мои руки уже не тянутся настраивать рекламу.
+        </p>
+        <p class="reviews-text-box__date">14 сентября</p>
+      </article>
+      <article class="reviews-text-box">
+        <div class="reviews-top">
+          <div class="reviews-top__img-3"></div>
+          <div class="reviews-top__box">
+            <p class="reviews-top__name">Аня</p>
+            <img
+              src="./images/rating.svg"
+              class="reviews-rating"
+              alt="Rating"
+            />
+          </div>
+        </div>
+        <p class="reviews-text-box__title">«Супер-спец!»</p>
+        <p class="reviews-text-box__review">
+          Ирина, это супер результат за сегодня 5 лидов целевых, заработали на
+          ремонте 2000$, если так пойдет и дальше Мы миллионеры!&#41; ахха
+          Супер, все супер и креативы, как нам нравится Мы с мужем пока всем
+          довольны!
+        </p>
+        <p class="reviews-text-box__date">6 июня</p>
+      </article>
+      <article class="reviews-text-box reviews-text-box__right">
+        <div class="reviews-top">
+          <div class="reviews-top__img-4"></div>
+          <div class="reviews-top__box">
+            <p class="reviews-top__name">Алина</p>
+            <img
+              src="./images/rating.svg"
+              class="reviews-rating"
+              alt="Rating"
+            />
+          </div>
+        </div>
+        <p class="reviews-text-box__title">
+          «Прекрасный человек и отличный специалист»
+        </p>
+        <p class="reviews-text-box__review">
+          Ира, все в восторге от тебя! Мне уже все знакомые написали&#41;
+        </p>
+        <p class="reviews-text-box__date">23 мая</p>
+      </article>
+    </section>
+    <section class="free-consultation">
+      <h2 class="free-consultation__h2">Станьте ОГНЕННЫМ &#128293; кейсом</h2>
+      <button
+        class="free-consultation__button free-consultation__button_plus"
+        onclick="openForm()"
+      >
+        бесплатнуая консультация
+      </button>
+      <p class="free-consultation__text">
+        Со мной вы увеличите прибыль и выйдите на новые рынки
+      </p>
+      <p class="free-consultation__text">
+        Оставляйте заявку и мы обсудим новые идеи для продвижения вашего проекта
+      </p>
+    </section>
+    <section class="why-im">
+      <h2 class="why-im__title">ПОЧЕМУ Я?</h2>
+      <table>
+        <tbody>
+        <tr class="odd-line">
+          <td class="why-im__number">01</td>
+          <td class="why-im__name">Системный подход</td>
+        </tr>
+        <tr class="even-line">
+          <td></td>
+          <td class="why-im__text">
+            погружусь в ваш бизнес с целью ежедневной работы над проектом для
+            достижения оптимальных результатов не дай поесть, дай внедрить идею
+          </td>
+        </tr>
+        <tr class="odd-line">
+          <td class="why-im__number">02</td>
+          <td class="why-im__name">Масштаб</td>
+        </tr>
+        <tr class="even-line">
+          <td></td>
+          <td class="why-im__text">
+            возможность полноценного ведения проекта под ключ таргет+маркетинг
+            опыт работы с большими бюджетами
+          </td>
+        </tr class="even-line">
+        <tr class="odd-line">
+          <td class="why-im__number">03</td>
+          <td class="why-im__name">Идейность</td>
+        </tr>
+        <tr class="even-line">
+          <td></td>
+          <td class="why-im__text">
+            я не тестирую, я внедряю рабочие связки сходу
+          </td>
+        </tr>
+        <tr class="odd-line">
+          <td class="why-im__number">04</td>
+          <td class="why-im__name">Коммуникация</td>
+        </tr>
+        <tr class="even-line">
+          <td></td>
+          <td class="why-im__text">
+            Ежедневная связь, я рядом, когда так нужна
+          </td>
+        </tr>
+      </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <button class="free-consultation__button" onclick="openForm()">
+        ОСТАВИТЬ ЗАЯВКУ
+      </button>
+      <p class="footer__text">НЕ ХОТИТЕ ЖДАТЬ ? СВЯЖИТЕСЬ ПЕРВЫМИ</p>
+      <div class="footer__container">
+        <a href="tel:+375296150629">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="40"
+            height="40"
+            viewBox="0 0 120 120"
+            id="phone"
+          >
+            <defs>
+              <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#91FC8A"></stop>
+                <stop offset="100%" stop-color="#00DD35"></stop>
+              </linearGradient>
+              <rect id="a" width="120" height="120" x="0" y="0" rx="28"></rect>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <g>
+                <mask id="c" fill="#fff"><use xlink:href="#a"></use></mask>
+                <use fill="url(#b)" xlink:href="#a"></use>
+                <path
+                  fill="#FFF"
+                  d="M56 47.5v13H46c-6.09 0-9.5 1.5-10.5 9.5 0 2-.5 5-3.5 6l-16 3c-5 .5-6.453-.504-7.5-3C2.005 60.511 18 48 56 47.5zm0 0c38 .5 53.995 13.011 47.5 28.5-1.047 2.496-2.5 3.5-7.5 3l-16-3c-3-1-3.5-4-3.5-6-1-8-4.41-9.5-10.5-9.5H56v-13z"
+                  mask="url(#c)"
+                  transform="rotate(-135 56 63.312)"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/irimerz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 3364.7 3364.7"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <radialGradient
+                id="0"
+                cx="217.76"
+                cy="3290.99"
+                r="4271.92"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset=".09" stop-color="#fa8f21" />
+                <stop offset=".78" stop-color="#d82d7e" />
+              </radialGradient>
+              <radialGradient
+                id="1"
+                cx="2330.61"
+                cy="3182.95"
+                r="3759.33"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0" />
+                <stop offset="1" stop-color="#8c3aaa" />
+              </radialGradient>
+            </defs>
+            <path
+              d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9"
+              fill="url(#0)"
+            />
+            <path
+              d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9"
+              fill="url(#1)"
+            />
+            <path
+              d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57"
+              fill="#ffffff"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://t.me/irimerzFB"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Telegram"
+            role="img"
+            width="40"
+            height="40"
+            viewBox="0 0 512 512"
+          >
+            <rect width="512" height="512" rx="15%" fill="#37aee2" />
+            <path
+              fill="#c8daea"
+              d="M199 404c-11 0-10-4-13-14l-32-105 245-144"
+            />
+            <path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34" />
+            <path
+              fill="#f6fbfe"
+              d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=375296150629"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="WhatsApp"
+            role="img"
+            width="40"
+            height="40"
+            viewBox="0 0 512 512"
+          >
+            <rect width="512" height="512" rx="15%" fill="#25d366" />
+            <path
+              fill="#25d366"
+              stroke="#ffffff"
+              stroke-width="26"
+              d="M123 393l14-65a138 138 0 1150 47z"
+            />
+            <path
+              fill="#ffffff"
+              d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="footer__box-img">
+        <img class="footer__img" src="./images/ira-bottom.png" alt="Ira 2" />
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
