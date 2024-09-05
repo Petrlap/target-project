@@ -19,19 +19,19 @@
         <p class="modal-content__text">Где я могу с вами связаться?</p>
         <section class="container" id="container_1">
           <div class="form-container sign-up">
-            <form>
+            <form id="telegram-form">
               <h2 class="form__h2">Позвонить вам в телеграм?</h2>
-              <input type="text" placeholder="Ваше имя" />
-              <input type="text" placeholder="Ваш номер" />
-              <button>Отправить</button>
+              <input type="text" id="name_telegram" placeholder="Ваше имя" />
+              <input type="text" id="phone_telegram" placeholder="Ваш номер" />
+              <button type="submit">Отправить</button>
             </form>
           </div>
           <div class="form-container sign-in">
-            <form>
+            <form id="whatsapp-form">
               <h2 class="form__h2_start">Позвонить вам в whatsapp?</h2>
-              <input type="text" placeholder="Ваше имя" />
-              <input type="text" placeholder="Ваш номер" />
-              <button>Отправить</button>
+              <input type="text" id="name_whatsapp" placeholder="Ваше имя" />
+              <input type="text" id="phone_whatsapp" placeholder="Ваш номер" />
+              <button type="submit">Отправить</button>
             </form>
           </div>
           <div class="toggle-container">
@@ -1586,6 +1586,24 @@
         <img class="footer__img" src="./images/ira-bottom.png" alt="Ira 2" />
       </div>
     </footer>
+    <script>
+      if (!window.fbq) {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        fbq('init', '823990246609986'); 
+        fbq('track', 'PageView');
+      }
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=823990246609986&ev=PageView&noscript=1"
+    /></noscript>
     <script src="scripts.js"></script>
   </body>
 </html>

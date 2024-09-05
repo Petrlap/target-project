@@ -264,3 +264,69 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollToCenter(".reviews-text");
   }
 });
+
+function validateName(name) {
+  const nameRegex = /^[a-zA-Zа-яА-ЯёЁ\s]+$/;
+  return nameRegex.test(name);
+}
+
+function validatePhone(phone) {
+  const phoneRegex = /^\+?\d{10,}$/;
+  return phoneRegex.test(phone);
+}
+
+function validateForm(nameInput, phoneInput) {
+  const name = nameInput.value.trim();
+  const phone = phoneInput.value.trim();
+
+  if (!validateName(name)) {
+    alert("Введите корректное имя (только буквы).");
+    return false;
+  }
+
+  if (!validatePhone(phone)) {
+    alert("Введите корректный номер телефона (минимум 10 цифр).");
+    return false;
+  }
+
+  return true;
+}
+
+document
+  .getElementById("telegram-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("name_telegram").value;
+    const phone = document.getElementById("phone_telegram").value;
+
+    if (validateName(name) && validatePhone(phone)) {
+      sendEventToFacebook(name, phone, "Telegram");
+      alert("Данные отправлены, с вами скоро свяжутся!");
+    } else {
+      alert("Пожалуйста, введите правильные данные.");
+    }
+  });
+
+document
+  .getElementById("whatsapp-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("name_whatsapp").value;
+    const phone = document.getElementById("phone_whatsapp").value;
+
+    if (validateName(name) && validatePhone(phone)) {
+      sendEventToFacebook(name, phone, "WhatsApp");
+      alert("Данные отправлены, с вами скоро свяжутся!");
+    } else {
+      alert("Пожалуйста, введите правильные данные.");
+    }
+  });
+function sendEventToFacebook(name, phone, platform) {
+  if (window.fbq) {
+    fbq("track", "Lead", {
+      name: name,
+      phone: phone,
+      platform: platform,
+    });
+  }
+}
